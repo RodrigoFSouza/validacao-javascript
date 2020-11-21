@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <form action="" class="formulario" id="formulario">
+      <!-- usuario -->
+      <div class="formulario-grupo" id="grupo-usuario">
+        <label for="usuario" class="formulario-label">Usuário</label>
+        <div class="formulario-grupo-input">
+          <input type="text" class="formulario-input" name="usuario" id="usuario" placeholder="Nome completo">
+          <i class="fas fa-times-circle formulario-validacao-estado"></i>
+        </div>
+        <p class="formulario-error">O login de usuário deve ter entre 4 e 20 caracteres, e não deve ter espaços em branco.</p>
+      </div>
+
+      <div class="formulario-grupo" id="grupo-nome">
+        <label for="nome" class="formulario-label">Nome do usuário</label>
+        <div class="formulario-grupo-input">
+          <input type="text" class="formulario-input" name="nome" id="nome" placeholder="Nome do usuário">
+          <i class="fas fa-times-circle formulario-validacao-estado"></i>
+        </div>
+        <p class="formulario-error">O nome do usuário tem que ter um dado entre 4 e 20 caracters.</p>
+      </div>
+
+      <div class="formulario-grupo" id="grupo-senha">
+        <label for="senha" class="formulario-label">Senha</label>
+        <div class="formulario-grupo-input">
+          <input type="password" class="formulario-input" name="senha" id="senha" placeholder="senha">
+          <i class="fas fa-times-circle formulario-validacao-estado"></i>
+        </div>
+        <p class="formulario-error">A senha do usuário deve ter entre 5 e 20 caracteres.</p>
+      </div>
+
+      <div class="formulario-grupo" id="grupo-confirmacao">
+        <label for="confirmacao" class="formulario-label">Confirmar Senha</label>
+        <div class="formulario-grupo-input">
+          <input type="password" class="formulario-input" name="confirmacao" id="confirmacao" placeholder="Confirme sua senha">
+          <i class="fas fa-times-circle formulario-validacao-estado"></i>
+        </div>
+        <p class="formulario-error">As Senhas devem ser iguais.</p>
+      </div>
+
+      <div class="formulario-grupo" id="grupo-email">
+        <label for="email" class="formulario-label">Email</label>
+        <div class="formulario-grupo-input">
+          <input type="email" class="formulario-input" name="email" id="email" placeholder="Informe o email">
+          <i class="fas fa-times-circle formulario-validacao-estado"></i>
+        </div>
+        <p class="formulario-error">Informe um email válido. O email só pode conter letras números e pontos.</p>
+      </div>
+
+      <div class="formulario-grupo" id="grupo-telefone">
+        <label for="telefone" class="formulario-label">Telefone</label>
+        <div class="formulario-grupo-input">
+          <input type="text" class="formulario-input" name="telefone" id="telefone" placeholder="Informe o telefone">
+          <i class="fas fa-times-circle formulario-validacao-estado"></i>
+        </div>
+        <p class="formulario-error">O telefone deve ter apenas números e no máximo 14 caracteres.</p>
+      </div>
+
+      <div class="formulario-grupo-termos" id="grupo-termos">
+        <label class="formulario-label">
+          <input class="formulario-checkbox" type="checkbox" name="termos" id="termos">
+          Aceito os termos e condições.
+        </label>
+      </div>
+
+      <div class="formulario-grupo-message" id="formulario-message">
+        <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b>Preenchar o formulário corretamente</p>
+      </div>
+      <div class="formulario-grupo-btn-enviar formulario-grupo-btn-enviar">
+        <button type="submit" class="formulario-btn">Enviar</button>
+        <p class="formulario-mensagem-sucesso" id="formulario-mensagem-sucesso">Formulário enviado com sucesso!</p>
+      </div>
+    </form>
+  </main>
+
+  <script src="scripts/formulario.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
